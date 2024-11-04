@@ -6,7 +6,7 @@ name: "Smart Lifebuoy"
 shortDescription: Solution for gesture detection using an accelerometer
 version: 1.0.0
 models: []
-language: "Particle Wiring"
+language: [ "Particle Wiring" ]
 cloudServices: []
 integrations: [ "edge-impulse" ]
 hardwareDependencies:
