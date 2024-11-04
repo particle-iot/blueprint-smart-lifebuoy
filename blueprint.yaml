@@ -10,8 +10,9 @@ language: "Particle Wiring"
 cloudServices: []
 integrations: [ "edge-impulse" ]
 hardwareDependencies:
-  - name: Photon 2, Boron, M-SoM
+  - name: Photon 2, Boron, M-SoM, Muon
     link: https://store.particle.io/collections/all-products?filter.p.product_type=Development%20Boards
+    tags: [ "Boron", "M-SoM", "Photon 2", "Muon", "P2" ]
 description: |
   This project illustrates gesture detection using an accelerometer. It's pre-programmed to detect:
 
