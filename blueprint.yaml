@@ -2,7 +2,7 @@ id: edge-impulse/smart-lifebuoy
 category: solution
 icon: edgeimpulse.png
 gitrepo: https://github.com/particle-iot/blueprint-smart-lifebuoy
-name: "Smart Lifebuoy"
+name: "Smart lifebuoy"
 shortDescription: Solution for gesture detection using an accelerometer
 version: 1.0.0
 models: []
@@ -14,11 +14,8 @@ hardwareDependencies:
     link: https://store.particle.io/collections/all-products?filter.p.product_type=Development%20Boards
     tags: [ "Boron", "M-SoM", "Photon 2", "Muon", "P2" ]
 description: |
-  This project illustrates gesture detection using an accelerometer. It's pre-programmed to detect:
+  This project demonstrates gesture detection using an accelerometer on a Particle device. The system is pre-configured to detect various motion patterns, including idle, waving side to side, bobbing up and down, and snake-like movement.
 
-  - Idle
-  - Waving side to side
-  - Bobbing up and down
-  - Moving like a snake
+  The smart lifebuoy concept could use these gestures to detect specific usage scenarios, such as when a lifebuoy is thrown or waved. This example leverages Edge Impulse for machine learning, allowing users to train custom gesture models.
 
-  This could be the basis for a smart lifebuoy that can detect how it's being used! 
+  This solution is suitable for applications in safety and rescue, providing real-time feedback on movement patterns to ensure accurate monitoring and alerting.
