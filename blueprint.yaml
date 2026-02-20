@@ -1,21 +1,41 @@
-id: edge-impulse/smart-lifebuoy
-category: solution
-icon: edgeimpulse.png
+# blueprint.yaml
+slug: blueprint-smart-lifebuoy
+type: Solution
+category: "AI and machine learning"
+expertiseLevel: "Intermediate"
+tags: ["AI/ML", "Sensors"]
+icon: assets/edge-impulse.svg
 gitrepo: https://github.com/particle-iot/blueprint-smart-lifebuoy
 name: "Smart lifebuoy"
 shortDescription: Solution for gesture detection using an accelerometer
 version: 1.0.0
 models: []
-language: [ "Particle Wiring" ]
+language: ["Particle Wiring"]
 cloudServices: []
-integrations: [ "edge-impulse" ]
+integrations:
+  - name: Edge Impulse
+supportedDevices:
+  - name: Photon 2
+    link: https://docs.particle.io/reference/datasheets/wi-fi/photon-2-datasheet/
+  - name: P2
+    link: https://docs.particle.io/reference/datasheets/wi-fi/p2-datasheet/
+  - name: Boron
+    link: https://docs.particle.io/reference/datasheets/b-series/boron-datasheet/
+  - name: M-SoM
+    link: https://docs.particle.io/reference/datasheets/m-series/msom-datasheet/
+  - name: Muon
+    link: https://docs.particle.io/reference/datasheets/m-series/muon-datasheet/
 hardwareDependencies:
-  - name: Photon 2, Boron, M-SoM, Muon
-    link: https://store.particle.io/collections/all-products?filter.p.product_type=Development%20Boards
-    tags: [ "Boron", "M-SoM", "Photon 2", "Muon", "P2" ]
+  - name: Supported Particle device
+  - name: Accelerometer
+introduction: |
+  Detect gestures using an accelerometer on a Particle device with Edge Impulse. The system recognizes motion patterns such as idle, waving, bobbing, and snake-like movement—suitable for safety and rescue applications.
 description: |
   This project demonstrates gesture detection using an accelerometer on a Particle device. The system is pre-configured to detect various motion patterns, including idle, waving side to side, bobbing up and down, and snake-like movement.
 
   The smart lifebuoy concept could use these gestures to detect specific usage scenarios, such as when a lifebuoy is thrown or waved. This example leverages Edge Impulse for machine learning, allowing users to train custom gesture models.
 
   This solution is suitable for applications in safety and rescue, providing real-time feedback on movement patterns to ensure accurate monitoring and alerting.
+additionalResources:
+  - title: Edge Impulse
+    link: https://www.edgeimpulse.com/
